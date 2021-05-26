@@ -1,8 +1,11 @@
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT license.
+
 package httpmodels
 
 import (
-	clustersModels "github.com/polar-rams/databricks-sdk-golang/azure/clusters/models"
-	"github.com/polar-rams/databricks-sdk-golang/azure/instance_pools/models"
+	clustersModels "github.com/Azure/databricks-sdk-golang/azure/clusters/models"
+	"github.com/Azure/databricks-sdk-golang/azure/instance_pools/models"
 )
 
 //GetReq is to compose the request to get an instance pool

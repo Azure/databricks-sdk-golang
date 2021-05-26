@@ -1,11 +1,14 @@
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT license.
+
 package azure_test
 
 import (
 	"fmt"
 	"testing"
 
-	"github.com/polar-rams/databricks-sdk-golang/azure/secrets/httpmodels"
-	"github.com/polar-rams/databricks-sdk-golang/azure/secrets/models"
+	"github.com/Azure/databricks-sdk-golang/azure/secrets/httpmodels"
+	"github.com/Azure/databricks-sdk-golang/azure/secrets/models"
 	"github.com/stretchr/testify/assert"
 )
 

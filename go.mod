@@ -1,4 +1,4 @@
-module github.com/polar-rams/databricks-sdk-golang
+module github.com/Azure/databricks-sdk-golang
 
 go 1.16
 

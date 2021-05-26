@@ -1,7 +1,10 @@
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT license.
+
 package models
 
 import (
-	libraryModels "github.com/polar-rams/databricks-sdk-golang/azure/libraries/models"
+	libraryModels "github.com/Azure/databricks-sdk-golang/azure/libraries/models"
 )
 
 type ClusterSpec struct {

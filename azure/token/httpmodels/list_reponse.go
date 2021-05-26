@@ -1,7 +1,10 @@
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT license.
+
 package httpmodels
 
 import (
-	"github.com/polar-rams/databricks-sdk-golang/azure/token/models"
+	"github.com/Azure/databricks-sdk-golang/azure/token/models"
 )
 
 type ListResp struct {

@@ -1,3 +1,6 @@
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT license.
+
 package azure_test
 
 import (
@@ -5,10 +8,10 @@ import (
 	"testing"
 	"time"
 
-	clusterHttpModels "github.com/polar-rams/databricks-sdk-golang/azure/clusters/httpmodels"
-	clusterModels "github.com/polar-rams/databricks-sdk-golang/azure/clusters/models"
-	"github.com/polar-rams/databricks-sdk-golang/azure/libraries/httpmodels"
-	"github.com/polar-rams/databricks-sdk-golang/azure/libraries/models"
+	clusterHttpModels "github.com/Azure/databricks-sdk-golang/azure/clusters/httpmodels"
+	clusterModels "github.com/Azure/databricks-sdk-golang/azure/clusters/models"
+	"github.com/Azure/databricks-sdk-golang/azure/libraries/httpmodels"
+	"github.com/Azure/databricks-sdk-golang/azure/libraries/models"
 	"github.com/stretchr/testify/suite"
 )
 

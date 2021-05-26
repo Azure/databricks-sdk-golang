@@ -1,8 +1,11 @@
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT license.
+
 package httpmodels
 
 import (
-	"github.com/polar-rams/databricks-sdk-golang/azure/jobs/models"
-	libraryModels "github.com/polar-rams/databricks-sdk-golang/azure/libraries/models"
+	"github.com/Azure/databricks-sdk-golang/azure/jobs/models"
+	libraryModels "github.com/Azure/databricks-sdk-golang/azure/libraries/models"
 )
 
 type RunsSubmitReq struct {

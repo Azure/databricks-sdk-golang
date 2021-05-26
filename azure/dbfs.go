@@ -1,10 +1,13 @@
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT license.
+
 package azure
 
 import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/polar-rams/databricks-sdk-golang/azure/dbfs/httpmodels"
+	"github.com/Azure/databricks-sdk-golang/azure/dbfs/httpmodels"
 )
 
 // DbfsAPI exposes the DBFS API

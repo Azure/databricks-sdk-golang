@@ -1,6 +1,9 @@
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT license.
+
 package azure
 
-import databricks "github.com/polar-rams/databricks-sdk-golang"
+import databricks "github.com/Azure/databricks-sdk-golang"
 
 // DBClient is the client for Azure implements DBClient
 type DBClient struct {

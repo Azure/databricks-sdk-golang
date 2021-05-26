@@ -1,3 +1,6 @@
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT license.
+
 package httpmodels
 
 // DeleteReq is to compose the request to delete an instance pool

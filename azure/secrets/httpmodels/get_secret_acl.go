@@ -1,6 +1,9 @@
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT license.
+
 package httpmodels
 
-import "github.com/polar-rams/databricks-sdk-golang/azure/secrets/models"
+import "github.com/Azure/databricks-sdk-golang/azure/secrets/models"
 
 type GetSecretACLReq struct {
 	Scope     string `json:"scope,omitempty" url:"scope,omitempty"`

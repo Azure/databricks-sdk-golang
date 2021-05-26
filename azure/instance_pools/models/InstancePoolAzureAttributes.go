@@ -1,7 +1,10 @@
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT license.
+
 package models
 
 import (
-	clusterModels "github.com/polar-rams/databricks-sdk-golang/azure/clusters/models"
+	clusterModels "github.com/Azure/databricks-sdk-golang/azure/clusters/models"
 )
 
 type InstancePoolAzureAttributes struct {

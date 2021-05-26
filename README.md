@@ -6,8 +6,8 @@ This is a Golang SDK for [DataBricks REST API 2.0](https://docs.databricks.com/a
 
 ```go
 import (
-  databricks "github.com/polar-rams/databricks-sdk-golang"
-  dbAzure "github.com/polar-rams/databricks-sdk-golang/azure"
+  databricks "github.com/Azure/databricks-sdk-golang"
+  dbAzure "github.com/Azure/databricks-sdk-golang/azure"
 )
 
 opt := databricks.NewDBClientOption("", "", os.Getenv("DATABRICKS_HOST"), os.Getenv("DATABRICKS_TOKEN"))

@@ -1,6 +1,9 @@
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT license.
+
 package httpmodels
 
-import "github.com/polar-rams/databricks-sdk-golang/azure/libraries/models"
+import "github.com/Azure/databricks-sdk-golang/azure/libraries/models"
 
 type ClusterStatusReq struct {
 	ClusterID string `json:"cluster_id,omitempty" url:"cluster_id,omitempty"`

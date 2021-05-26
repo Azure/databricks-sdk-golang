@@ -1,3 +1,6 @@
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT license.
+
 package azure_test
 
 import (
@@ -7,8 +10,8 @@ import (
 	"time"
 
 	"github.com/joho/godotenv"
-	databricks "github.com/polar-rams/databricks-sdk-golang"
-	dbAzure "github.com/polar-rams/databricks-sdk-golang/azure"
+	databricks "github.com/Azure/databricks-sdk-golang"
+	dbAzure "github.com/Azure/databricks-sdk-golang/azure"
 )
 
 var c *dbAzure.DBClient

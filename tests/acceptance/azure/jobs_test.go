@@ -1,3 +1,6 @@
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT license.
+
 package azure_test
 
 import (
@@ -5,10 +8,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/polar-rams/databricks-sdk-golang/azure/jobs/httpmodels"
-	"github.com/polar-rams/databricks-sdk-golang/azure/jobs/models"
-	workspaceHTTPModels "github.com/polar-rams/databricks-sdk-golang/azure/workspace/httpmodels"
-	workspaceModels "github.com/polar-rams/databricks-sdk-golang/azure/workspace/models"
+	"github.com/Azure/databricks-sdk-golang/azure/jobs/httpmodels"
+	"github.com/Azure/databricks-sdk-golang/azure/jobs/models"
+	workspaceHTTPModels "github.com/Azure/databricks-sdk-golang/azure/workspace/httpmodels"
+	workspaceModels "github.com/Azure/databricks-sdk-golang/azure/workspace/models"
 	"github.com/stretchr/testify/assert"
 )
 
