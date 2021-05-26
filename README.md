@@ -1,14 +1,44 @@
-# Project
+# databricks-sdk-golang
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+This is a Golang SDK for [DataBricks REST API 2.0](https://docs.databricks.com/api/latest/index.html#) and [Azure DataBricks REST API 2.0](https://docs.azuredatabricks.net/api/latest/index.html).
 
-As the maintainer of this project, please make a few updates:
+## Usage
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+```go
+import (
+  databricks "github.com/polar-rams/databricks-sdk-golang"
+  dbAzure "github.com/polar-rams/databricks-sdk-golang/azure"
+)
+
+opt := databricks.NewDBClientOption("", "", os.Getenv("DATABRICKS_HOST"), os.Getenv("DATABRICKS_TOKEN"))
+c := dbAzure.NewDBClient(opt)
+
+jobs, err := c.Jobs().List()
+```
+
+## Implementation Progress
+
+| API  | Status |
+| :--- | :---: |
+| Account API | N/A |
+| Clusters API | ✔ |
+| Cluster Policies API | ✗ |
+| DBFS API | ✔ |
+| Global Init Scripts | ✗ |
+| Groups API | ✔ |
+| Instance Pools API | ✔ |
+| IP Access List API | ✗ |
+| Jobs API | ✔ |
+| Libraries API | ✔ |
+| MLflow** API | ✗ |
+| Permissions API | ✗ |
+| SCIM** API | ✗ |
+| Secrets API | ✔ |
+| Token API | ✔ |
+| Token Management API | ✗ |
+| Workspace API | ✔ |
+
+** SCIM and MLflow are separate systems that are planned differently.
 
 ## Contributing
 
