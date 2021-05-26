@@ -20,7 +20,6 @@ jobs, err := c.Jobs().List()
 
 | API  | Status |
 | :--- | :---: |
-| Account API | N/A |
 | Clusters API | ✔ |
 | Cluster Policies API | ✗ |
 | DBFS API | ✔ |
