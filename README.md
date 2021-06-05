@@ -10,7 +10,7 @@ import (
   dbAzure "github.com/Azure/databricks-sdk-golang/azure"
 )
 
-opt := databricks.NewDBClientOption("", "", os.Getenv("DATABRICKS_HOST"), os.Getenv("DATABRICKS_TOKEN"))
+opt := databricks.NewDBClientOption("", "", os.Getenv("DATABRICKS_HOST"), os.Getenv("DATABRICKS_TOKEN"),nil, false, 0)
 c := dbAzure.NewDBClient(opt)
 
 jobs, err := c.Jobs().List()
