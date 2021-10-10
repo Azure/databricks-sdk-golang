@@ -6,6 +6,7 @@ import (
 	"net/http"
 
 	"github.com/Azure/databricks-sdk-golang/azure/ip_access_lists/httpmodels"
+	"github.com/Azure/databricks-sdk-golang/azure/ip_access_lists/models"
 )
 
 // IPAccessListsAPI exposes the IPAccessLists API
@@ -22,8 +23,8 @@ func (a IPAccessListsAPI) init(client DBClient) IPAccessListsAPI {
 func (a IPAccessListsAPI) CheckEnabled() (httpmodels.CheckEnabledResp, error) {
 	var resp httpmodels.CheckEnabledResp
 
-	var req = httpmodels.CheckEnabledReq{Key: "enableIpAccessLists"}
-	jsonResp, err := a.Client.performQuery(http.MethodGet, "workspace-conf", req, nil)
+	var req = httpmodels.CheckEnabledReq{Keys: "enableIpAccessLists"}
+	jsonResp, err := a.Client.performQuery(http.MethodGet, "/workspace-conf", req, nil)
 	if err != nil {
 		return resp, err
 	}
@@ -33,8 +34,15 @@ func (a IPAccessListsAPI) CheckEnabled() (httpmodels.CheckEnabledResp, error) {
 }
 
 // Set enables or disables the IP access list feature for Databricks workspace.
-func (a IPAccessListsAPI) Set(req httpmodels.SetReq) error {
-	_, err := a.Client.performQuery(http.MethodPatch, "/ip-access-lists", req, nil)
+func (a IPAccessListsAPI) Set(flag bool) error {
+	req := httpmodels.SetReq{
+		EnableIpAccessLists: models.EnableIpAccessListsFalse,
+	}
+	if flag {
+		req.EnableIpAccessLists = models.EnableIpAccessListsTrue
+	}
+	_, err := a.Client.performQuery(http.MethodPatch, "/workspace-conf", req, nil)
+
 	return err
 }
 

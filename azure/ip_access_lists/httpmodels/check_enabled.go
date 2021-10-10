@@ -1,9 +1,9 @@
 package httpmodels
 
 type CheckEnabledReq struct {
-	Key string `url:"key"`
+	Keys string `url:"keys"`
 }
 
 type CheckEnabledResp struct {
-	EnableIpAccessLists bool `json:"enableIpAccessLists,omitempty" url:"enableIpAccessLists,omitempty"`
+	EnableIpAccessLists string `json:"enableIpAccessLists,omitempty" url:"enableIpAccessLists,omitempty"`
 }
