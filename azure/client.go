@@ -70,6 +70,12 @@ func (c DBClient) Workspace() WorkspaceAPI {
 	return workspaceAPI.init(c)
 }
 
+// Workspace returns an instance of WorkspaceAPI
+func (c DBClient) IPAccessLists() IPAccessListsAPI {
+	var ipAccessListsAPI IPAccessListsAPI
+	return ipAccessListsAPI.init(c)
+}
+
 func (c *DBClient) performQuery(method, path string, data interface{}, headers map[string]string) ([]byte, error) {
 	return databricks.PerformQuery(c.Option, method, path, data, headers)
 }

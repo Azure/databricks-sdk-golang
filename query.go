@@ -36,7 +36,7 @@ func PerformQuery(option DBClientOption, method, path string, data interface{}, 
 			return nil, err
 		}
 		requestURL += "?" + params.Encode()
-	} else {
+	} else if data != nil {
 		bodyBytes, err := json.Marshal(data)
 		if err != nil {
 			return nil, err
