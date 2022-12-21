@@ -2,6 +2,8 @@
 
 This is a Golang SDK for [DataBricks REST API 2.0](https://docs.databricks.com/api/latest/index.html#) and [Azure DataBricks REST API 2.0](https://docs.azuredatabricks.net/api/latest/index.html).
 
+> There's a more up-to-date (Experimental) Databricks SDK for Go: https://github.com/databricks/databricks-sdk-go
+
 ## Usage
 
 ```go
